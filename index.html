@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Badger</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Righteous&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0 15% 0 15%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		h1 {
+			font-family: 'Righteous', sans-serif;
+			font-size: 5rem;
+			margin: 0;
+		}
+		p {
+			font-family: 'Lato', sans-serif;
+			font-size: 1.5rem;
+			margin: 0;
+		}
+		.progress-container {
+			width: 80%;
+			background-color: #333;
+			border-radius: 10px;
+			margin-top: 64px;
+			overflow: hidden;
+		}
+		.progress-bar {
+			width: 0%;
+			height: 20px;
+			background-color: #8BC34A;
+			transition: width 2s ease-in-out;
+		}
+		.subtitle {
+			font-family: 'Lato', sans-serif;
+			font-size: 1.2rem;
+			margin-top: 20px;
+		}
+		.subtitle a {
+			color: #00BCD4;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>The next step in event management is almost here.</h1>
+	<p>Available Q3 2025.</p>
+	<p class="subtitle">Want to join early access? Email <a target="_blank" href="mailto:contact@gobadger.me">contact@gobadger.me</a>.</p>
+	<div class="progress-container">
+		<div class="progress-bar" id="progress-bar"></div>
+	</div>
+    <script>
+        setTimeout(() => {
+            document.getElementById('progress-bar').style.width = '80%';
+        }, 500);
+    </script>
+</body>
+</html>
